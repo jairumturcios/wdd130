@@ -26,6 +26,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1x solid rgb(204, 16, 16);
+    padding: 2px;
+    box-shadow: 0 0 30px rgb(3, 20, 117);
 }
 
 p {
@@ -38,7 +41,7 @@ footer {
     text-align: center;
 }
 
-nav {
+nav a {
     color: white;
     display: block;
     padding: 20px;
