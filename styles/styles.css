@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+    /*Added on W03, for the code along*/
+    font-family: Roboto, Arial, sans-serif;
+    /*Added on W03, for the code along*/
+}
+
 /*:root {
     /* --heading-background-color: #f06; */
 /* --heading-text-color: #333; */
@@ -35,6 +42,17 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    position: relative;
+    /*Added on W03*/
+}
+
+aside h2 {
+    position: relative;
+    /*Added on W03, for the code along*/
+    top: 67px;
+    /*Added on W03, for the code along*/
+    left: 150px;
+    /*Added on W03, for the code along*/
 }
 
 main img {
@@ -44,11 +62,13 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px rgb(3, 20, 117);
     float: right;
+    /*Added on W03, for the code along*/
     margin: 0 0 1rem 1rem;
+    /*Added on W03, for the code along*/
 }
 
 p {
-    padding: 0;
+    padding: 1rem;
 }
 
 footer {
@@ -79,7 +99,7 @@ p {
     padding: 10px;
 }
 
-/* ==========notes about creating variables========== */
+/* ==========notes about creating VARIABLES========== */
 /* ==========how to create them========== */
 
 /*:root {
@@ -106,12 +126,30 @@ aside {
 }
 
 /* =========Comments for W03========= */
-/* =========Class Selectors========= */
-.box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 /0.1);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
 
+/* CSS "Selectors" can be:*/
+/* Universal         *{...}  */
+/* Type [Element]   h1{...}  */
+/* Class          .red{...}  */
+/* ID             #red{...}  */
+
+/* =========Class Selectors used on Code Along W03========= */
+.box {
+    /*Added on W03, for the code along*/
+    margin: 1rem;
+    /*Added on W03, for the code along*/
+    border: 1px solid rgb(0 0 0 /0.1);
+    /*Added on W03, for the code along*/
+    padding: 1rem;
+    /*Added on W03, for the code along*/
+    background-color: #eee;
+    /*Added on W03, for the code along*/
+    color: #333;
+    /*Added on W03, for the code along*/
+
+}
+
+.indent {
+    padding-left: 2rem;
+    /*Added on W03, for the code along*/
 }
