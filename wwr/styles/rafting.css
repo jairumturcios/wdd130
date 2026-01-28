@@ -82,6 +82,7 @@ h1 {
 
 /* Article Image Positioning */
 .hero article img {
+    position: absolute;
     float: right;
     width: 125px;
 }
