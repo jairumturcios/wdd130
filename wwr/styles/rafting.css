@@ -1,106 +1,104 @@
-/* 1. Header Grid Layout */
+:root {
+    /* Colors */
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary-color: #6861f4;
+    /* warm sand */
+    --accent1-color: #264653;
+    /* dark slate blue */
+    --accent2-color: #e9c46a;
+    /* light golden yellow */
+
+    /* Typography */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
 header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 20px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 
-header img {
-    max-height: 60px;
-    width: auto;
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* 2. Nav Flex Layout */
-nav {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    align-items: center;
-}
-
-nav a {
-    color: var(--primary-color);
-    font-weight: bold;
-    text-decoration: none;
-    padding: 8px 12px;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover,
-nav a:focus {
-    background-color: var(--accent2-color);
-    color: #fff;
-    border-radius: 4px;
-}
-
-/* 3. History Section */
-.history {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 16px;
-}
-
-.history img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.history .text {
+/* Base Body Styles */
+body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
-/* 4. Adventures Section */
-.adventures {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    padding: 16px;
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
-.adventures figure {
-    margin: 0;
-    text-align: center;
-    font-family: var(--body-font);
+h1,
+h2 {
+    font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-.adventures figure img {
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
     width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
-.adventures figcaption {
-    margin-top: 8px;
-    font-style: italic;
-    font-size: 0.9rem;
-}
-
-/* 5. Footer Social Media */
-footer .socialmedia {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
+/* Overlay Header Style */
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
     padding: 16px;
-    align-items: center;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+    /* white text - make sure there is enough contrast with the background-color */
 }
 
-footer .socialmedia img {
-    width: 40px;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-footer .socialmedia img:hover {
-    transform: scale(1.1);
+/* Article Image Positioning */
+.hero article img {
+    position: relative;
+    float: right;
+    width: 100px;
 }
 
 /*  */
+.hero article {
+    position: absolute;
+    top: -260px;
+    left: 175px;
+    max-width: 600px;
+    padding: 1rem;
+    background-color: var(--secondary-color)
+}
+
+/*  */
+/* W04 project  */
 /*  */
 /* 1. Header Grid Layout */
 header {
